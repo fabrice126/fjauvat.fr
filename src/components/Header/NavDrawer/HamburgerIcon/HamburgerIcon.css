@@ -1,0 +1,49 @@
+.HamburgerIcon {
+  display: flex;
+  position: relative;
+  height: 28px;
+  width: 28px;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  left: 20px;
+  z-index: 10;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.HamburgerIcon__line,
+.HamburgerIcon__line::before,
+.HamburgerIcon__line::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2.5px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  transition: all ease-out var(--transition-ms-menu-icon-header);
+}
+.HamburgerIcon__line::before {
+  top: -8px;
+}
+.HamburgerIcon__line::after {
+  top: 8px;
+}
+.HamburgerIcon--open > .HamburgerIcon__line::before,
+.HamburgerIcon--open > .HamburgerIcon__line::after {
+  background-color: var(--background-color-header);
+  transition: all ease-in var(--transition-ms-menu-icon-header);
+}
+.HamburgerIcon--open > .HamburgerIcon__line::before{
+  transform: rotate(225deg);
+  top: 0px;
+}
+.HamburgerIcon--open > .HamburgerIcon__line::after{
+  transform: rotate(-225deg);
+  top: 0px;
+}
+.HamburgerIcon--open > .HamburgerIcon__line{
+  background-color: transparent;
+  transition: background-color ease-in var(--transition-ms-menu-icon-header);
+}
+.HamburgerIcon--close {
+}

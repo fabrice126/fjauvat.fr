@@ -1,0 +1,22 @@
+.Logo {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.Logo__letter {
+  color: #f5f5f5;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.Logo__letter:nth-child(2) {
+  color: #f5f5f5;
+  position: absolute;
+  left: -15px;
+}
+
+.Logo__link {
+  text-decoration: none;
+}

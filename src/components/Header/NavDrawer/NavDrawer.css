@@ -1,0 +1,39 @@
+.NavDrawer {
+  display: none;
+}
+.NavDrawer__shadow {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .NavDrawer {
+    display: initial;
+  }
+  .NavDrawerMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #ffffffba;
+    z-index: 4;
+    width: 0%;
+    overflow: hidden;
+    transition: width ease-out var(--transition-ms-menu-header);
+    box-shadow: 1px 1px 12px 0px rgba(69, 69, 69, 0.25);
+    padding-top: var(--height-header);
+  }
+  .NavDrawerMenu--open {
+    transition: width ease-in var(--transition-ms-menu-header);
+    width: 60%;
+  }
+
+  .NavDrawer__shadow--open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #9c9a9a70;
+    transition: background-color ease-in var(--transition-ms-menu-header);
+  }
+}

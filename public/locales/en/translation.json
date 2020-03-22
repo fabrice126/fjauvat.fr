@@ -1,0 +1,9 @@
+{
+    "nav-drawer": {
+        "home": "Home",
+        "cv": "CV",
+        "projects": "Projects",
+        "github": "GitHub",
+        "contact": "Contact"
+    }
+}
