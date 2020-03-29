@@ -1,7 +1,7 @@
 // Node_modules
 import React from 'react';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Locals
 import './Projects.css';
 // Components
@@ -28,13 +28,7 @@ class Projects extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<ul>
-					<li>
-						<a href="">DNA</a>
-					</li>
-				</ul>
-			</div>
+			<div />
 		);
 	}
 }

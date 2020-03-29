@@ -1,10 +1,10 @@
 // Node_modules
 import React from 'react';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
+// import { Controller, Scene } from 'react-scrollmagic';
+// import { Tween, Timeline } from 'react-gsap';
 // Locals
 import './Home.css';
 // Components
@@ -12,35 +12,31 @@ import './Home.css';
 class Home extends React.Component {
 	constructor() {
 		super();
-		this.imagesLeft = [
-			'html',
-			'css',
-			'javascript',
-			'react',
-		];
-		this.imagesRight = [
-			'graphql',
-			'nodejs',
-			'java',
-			'mongodb',
-		];
+		this.imagesLeft = ['html', 'css', 'javascript', 'react'];
+		this.imagesRight = ['graphql', 'nodejs', 'java', 'mongodb'];
 	}
 
-	componentDidMount() {
-	}
+	componentDidMount() {}
 
 	render() {
 		return (
 			<div className="Home">
 				{/* <div className="Skills" /> */}
-
+				<ul>
+					<li><a href="/projects/2048">2048</a></li>
+					<li><a href="/projects/dna">DNA</a></li>
+					<li><a href="/projects/four-in-a-row">four in a row</a></li>
+					<li><a href="/projects/tic-tac-toe">tic tac toe</a></li>
+					<li><a href="https://d21yheehhfoll5.cloudfront.net">Blockwallet</a></li>
+					<li><a href="https://d3igi0be8yuebj.cloudfront.net">Beer Market</a></li>
+					<li><a href="https://d1wp0ua4gaj68.cloudfront.net">App Api Spotify</a></li>
+				</ul>
 			</div>
 		);
 	}
 }
 
 export default Home;
-
 
 /**
  				<Controller>
